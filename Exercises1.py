@@ -1,15 +1,15 @@
 
 #Exercise 1
-my_name = "Axel";
+my_name = "Axel"
 
-my_age = 12;
+my_age = 12
 
-Str = f"My name is  {my_name} and I am {my_age} years old.";
-print(Str);
+Str = f"My name is  {my_name} and I am {my_age} years old."
+print(Str)
 
 
 #Exercise 2
-original_string = "Python is an amazing progamming language";
+original_string = "Python is an amazing progamming language"
 
 first_word = original_string.split()[0]
 
@@ -21,9 +21,7 @@ print ("Uppercase word: ", uppercase_string)
 print ("Modified string: ", modified_string)
 
 #Exercise 3
-favourite_foods = ["Pizza", "Sushi", "Ice Cream"]
-
-favourite_foods.append("Burger")
+favourite_foods = ["Pizza", "Sushi", "Ice Cream", "Burger"]
 
 favourite_foods.pop(0)
 
@@ -52,11 +50,7 @@ print("Squared numbers: ", squared_numbers)
 print("Divisible by 2 & 3: ", divisible_by_2_and_3)
 
 #Exercise 5
-student_scores = {"Alice": 85, "Bob": 92, "Charlie": 78}
-
-student_scores["David"] = 88
-
-student_scores["Alice"] = 95
+student_scores = {"Alice": 95, "Bob": 92, "Charlie": 78, "David": 88}
 
 students_above_90 = [name for name, score in student_scores.items() if score > 90]
 print ("Students wit scores above 90: ", students_above_90)
@@ -69,7 +63,7 @@ squares = {num: num**2 for num in range (1,6)}
 
 string_representations = {num: str(num) for num in range (1,6)}
 
-odd_numbers = {num: num for num in numbers in range(1, 6) if num % 2 != 0}
+odd_numbers = {num: num for num in range(1, 6) if num % 2 != 0}
 
 print ("Squares:", squares)
 print ("String representations:", string_representations)
@@ -90,8 +84,8 @@ print (grade_calculator(85))
 
 
 #Exercise 8
-def calculate_total(price, tax_rate, discout):
-    if price < 0 or tax_rate < 0 or discout < 0:
+def calculate_total(price, tax_rate, discount):
+    if price < 0 or tax_rate < 0 or discount < 0:
         return "Error: All parameters must be a positive number."
 
     final_price = price * (price * tax_rate) - discount
@@ -109,11 +103,11 @@ class Book:
         return current_year - self.year
 
     def get_info(self):
-        return f"'{self.title}', by '{self.author} {(self.year)}'"
+        return f"'{self.title}', by '{self.author} ({self.year})'"
 
-    my_book = Book("1984", "George Orwell", 1949)
-    print (my_book.get_info())
-    print ("Book age:", my_book.calculate_age(2025))
+my_book = Book("1984", "George Orwell", 1949)
+print (my_book.get_info())
+print ("Book age:", my_book.calculate_age(2025))
 
 #Exercise 10
 class Car:
